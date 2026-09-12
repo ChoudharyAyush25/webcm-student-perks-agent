@@ -1,41 +1,59 @@
-# Student Perks Agent
+# 🎓 Student Perks Agent
 
-A hackathon MVP for discovering real student discounts and free offers with a browser agent. The current skeleton includes the student profile UI and an API seam for live discovery; it intentionally returns no fake offers yet.
+A browser agent that hunts the live web for student discounts,
+free plans, credits, and other student opportunities based on
+a student's interests.
 
-## Requirements
+## 🚀 What Problem Are We Solving?
 
-- Node.js 20+
-- npm
+Student benefits are scattered across the internet. Students
+have to search multiple websites and manually check countless
+offers.
 
-## Run locally
+Student Perks Agent lets a student provide an interest such as
+Music, Design, Coding, Gaming, or Cloud and uses a browser agent
+to discover relevant opportunities from the live web.
 
-```bash
-npm install
-npm run dev
-```
+## 🤖 How It Works
 
-Open http://localhost:5173. The API runs on http://localhost:8787.
+Student Interest
+       ↓
+Browser Agent
+       ↓
+Live Web Search
+       ↓
+Relevant Pages
+       ↓
+Potential Student Perks
+       ↓
+Student verifies & claims
 
-Useful checks:
+## 🛠️ Built With
 
-```bash
-curl http://localhost:8787/api/health
-npm run build
-```
+- Webcmd
+- React
+- Node.js
+- Browser Agents
 
-## Structure
+## 🎥 Demo
 
-```text
-src/                 React frontend and profile form
-server/index.js      Express API entry point
-server/agent/        Browser-agent orchestration seam
-server/offers/       Offer model and persistence seam
-```
+Watch our 2-minute demo:
+[LinkedIn Demo](https://lnkd.in/p/djiqvCyh)
 
-## Current scope
+## 👥 Team
 
-The form sends a validated student profile to `POST /api/offers/discover`. The backend runs Webcmd's doctor, named profile, named session, site-memory context, and `browser run` lifecycle, then returns up to five live-web findings with source URLs and evidence fields. Identity verification, payment, account creation, and final submission are intentionally human-controlled and are not implemented.
+- Ayush Choudhary
+- Shreyash Shadhian
 
-## Next implementation
+## 🏫 Future Vision
 
-Improve source ranking and evidence extraction based on the hackathon demo's target categories. Keep every result tied to the live official/source page and retain `needs_verification` or `insufficient_evidence` when the page does not establish eligibility.
+We envision extending Student Perks Agent with the
+Office of Student Welfare at VIT Bhopal University to help
+students discover external student benefits as well as
+relevant campus opportunities and welfare resources.
+
+## ⚠️ Disclaimer
+
+Offers shown by the agent are potential opportunities
+discovered from the live web. Users should verify current
+availability and eligibility on the provider's website.
