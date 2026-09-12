@@ -1,6 +1,6 @@
 # Student Perks Agent
 
-A three-hour hackathon MVP for discovering real student discounts and free offers with a browser agent. The current skeleton includes the student profile UI and an API seam for live discovery; it intentionally returns no fake offers yet.
+A hackathon MVP for discovering real student discounts and free offers with a browser agent. The current skeleton includes the student profile UI and an API seam for live discovery; it intentionally returns no fake offers yet.
 
 ## Requirements
 
